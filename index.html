@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <title>Encriptador</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo-alura" src="./imagens/logo-alura.png" alt="logo-alura">
+  </header>
+  <main>
+    <section>
+      <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+
+      <div>
+        <p class="informacao"> <img src="./imagens/exclamacao.png" alt="ponto-de-exclamacao"> Apenas
+          letras minúsculas e sem acento </p>
+      </div>
+      <div class="botoes">
+        <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+        <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+      </div>
+    </section>
+
+    <section>
+      <textarea class="mensagem" id="boneco" cols="20" rows="10"></textarea>
+      <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="icones">
+      <a href="https://www.linkedin.com/in/cassio-ferreira-141039168/"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <a href="https://github.com/CassioFerreiraRod"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+    <p>Desenvolvido por Cassio Ferreira &copy Copyright 2023.</p>
+    <p>Challenge Alura: Decodificador de texto - T4 ONE</p>
+  </footer>
+
+  </section>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
